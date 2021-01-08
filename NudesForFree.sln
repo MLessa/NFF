@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29920.165
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NudesForFree", "NudesForFree\NudesForFree.csproj", "{9368D324-A638-4EFB-91CB-C49A1983B6DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9368D324-A638-4EFB-91CB-C49A1983B6DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9368D324-A638-4EFB-91CB-C49A1983B6DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9368D324-A638-4EFB-91CB-C49A1983B6DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9368D324-A638-4EFB-91CB-C49A1983B6DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B746D2FF-0330-4166-B4A2-9000C6AA0108}
+	EndGlobalSection
+EndGlobal

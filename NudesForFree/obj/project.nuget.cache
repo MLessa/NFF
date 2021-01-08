@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "B0/HDrMnPhMJ2HTtWO03sLYiUiXDnjtZoCgEY243dpKBHv5knabV2fKFHwTJsBsGJOUBsABUFCPGqw4DuCgFAg==",
+  "success": true,
+  "projectFilePath": "D:\\Workspace\\nff\\trunk\\NudesForFree\\NudesForFree.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lessa\\.nuget\\packages\\dapper\\2.0.30\\dapper.2.0.30.nupkg.sha512",
+    "C:\\Users\\lessa\\.nuget\\packages\\mysqlconnector\\0.63.0\\mysqlconnector.0.63.0.nupkg.sha512",
+    "C:\\Users\\lessa\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\lessa\\.nuget\\packages\\system.reflection.emit.lightweight\\4.6.0\\system.reflection.emit.lightweight.4.6.0.nupkg.sha512",
+    "C:\\Users\\lessa\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,84 @@
+<div class="page" id="camera-view" >
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+      <div class="title" style="font-family: 'Audiowide'; color:black">NudesForFree</div>
+    </div>
+  </div>
+  <div class="title-container" style="margin: 60px 15px 10px;">
+    <div class="title-with-link">
+      <h1>Mandar nude</h1>
+    </div>
+  </div>
+   <div class="page-content" style="padding-bottom: 160px;padding-top: 10px !important;">
+    <div class="block">
+      <div class="card card-style-2">
+        <div class="card-image-container" id="card-image-container" style="height: 230px;">
+          <div id="upload-image-background" class="card-image" style="background-color: maroon;" ></div>
+          <div class="image-cover-dialog card-image" style="display: none;">
+            <a class="small-button button button-fill link image-cover-dialog-close-btn"
+                onclick="$('.image-cover-dialog').hide();">
+              <i style="font-size: 25px;margin-right: 10px;" class="icon ion-ios-close"></i>
+            </a>
+            <a style="border-radius: 90px;" class="small-button button button-fill link" onclick="takeAnother()">
+              <i style="font-size: 25px;margin-right: 10px;" class="icon ion-ios-camera"></i>Tirar outra
+            </a>
+            <a style="border-radius: 90px;" class="small-button button button-fill link" onclick="deletePhoto()">
+              <i style="font-size: 25px;margin-right: 10px;" class="icon ion-ios-trash"></i>Apagar
+            </a>
+            <a style="border-radius: 90px;" class="small-button button button-fill link" onclick="seePhoto('takenImage')">
+              <i style="font-size: 25px;margin-right: 10px;" class="icon ion-ios-eye"></i>Ver
+            </a>
+          </div>
+        </div>
+        <div class="card-infos">
+          <div class="list">
+            <ul>
+              <li>
+                <a href="#" class="item-link smart-select">
+                  <select name="category" onchange="document.querySelector('.back').click();">
+                    <option value="0" selected>Feminino</option>
+                    <option value="1">Masculino</option>
+                    <option value="2">HxM (Homem com Mulher)</option>
+                    <option value="3">MxM (Mulher com Mulher)</option>
+                    <option value="4">HxH (Homem com Homem)</option>
+                  </select>
+                  <div class="item-content">
+                    <div class="item-inner" id="post_category_selector" >
+                      <div class="item-title">Categoria</div>
+                      <div class="item-after">Feminino</div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="fab fab-extended fab-center-top color-red" style="top: 50px;" 
+        onclick="document.querySelector('#photo-input').click();" id="photo-upload-btn">
+        <a href="#">
+          <i class="icon ion-md-add-circle" style="font-size: 40px;"></i>
+          <div class="fab-text">Foto</div>
+        </a>
+      </div>
+
+      <input style="display: none;" id="photo-input" type="file" accept="image/*" onchange="uploadFile(this)">
+
+      <div class="list no-hairlines custom-form">
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <textarea id="photoDescription" class="resizable" placeholder="Escreva uma legenda..."></textarea>
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        </ul>
+      </div>
+      <a class="big-button button button-fill link" onclick="sendNude()">
+        <i class="icon ion-ios-send"></i>Mandar nude
+      </a>
+    </div>
+  </div>
+</div>

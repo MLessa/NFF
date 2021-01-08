@@ -1,0 +1,174 @@
+<div class="page single single-2 no-navbar" data-name="single-2">
+  <div class="page-content" style="padding-top: 0px !important;height: 90%;">
+    <a href="#" class="link back close-button">
+      <img src="img/close.svg" alt="Close">
+    </a>
+    <p style="display: none;" id="postID"></p>
+    <div class="single-header" onclick="seePhoto('post-image')">
+      <img id="post-image" class="single-header-image">
+      <div class="single-header-infos">
+        <div class="single-header-details" style="display: flex;justify-content: flex-end;">
+          <div id="post_like_count" style="color: white;font-size: 18px;width: 90px;padding-top: 6px;"
+            onclick="likePost($('#postID').text());return false;">
+            <i id="heartType" class="icon ion-ios-heart-empty"
+              style="font-size: 35px;margin-right: 10px;float:left"></i>
+            <div id="total_likes" style="float:left;margin-top:18px"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-author post-author-stick" style="height: 50px;justify-content: space-between;">
+      <div style=" display: flex;align-items: center;">
+        <img class="card-author-image" id="post_user_avatar" style="width: 50px;height: 50px;">
+        <div id="post_username"></div>
+      </div>
+
+      <div id="post_date" class="post-date" style="margin: 2%;"></div>
+    </div>
+
+    <div class="block article" style="display: block;">
+      <h3 id="post_description" style="text-align: justify;"></h3>
+      <div id="isHOT" class="chip color-red shakingIcon" style="font-size: 17px;margin-top: 10px;display: none;">
+        <i class="icon ion-ios-flame" style="margin-right: 8px;"></i>Hot
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="title-medium-container comment-container-title">
+        <h2>Comentários</h2>
+        <div class="post-date" style="margin: 4%;" id="countComments"></div>
+      </div>
+
+      <div id="noComment" class="no-nude-div" style="display: none;">
+        <p class="no-nude-div-item no-nude-text" style="width: 100%;font-size: 27px;margin: unset !important;">Nenhum comentário ainda</p>
+        <p class="no-nude-div-item no-nude-sad" style="font-size: 55px;margin: unset !important;">=(</p>
+      </div>
+      <div id="post-comment-infinity" class="list media-list comment-list no-hairlines infinite-scroll-content"
+        style="height: 400px;overflow-y: scroll;" data-infinite-distance="50">
+        <div class="block">
+          <ul class="infinite-scroll-content list" >
+            <li class="skeletonFade">
+              <a href="#" class="item item-content">
+                <div class="item-media skeleton" style="height: 70px;">
+                  &#8192;&#8192;&#8192;&#8192;
+                  &#8192;&#8192;&#8192;&#8192;
+                </div>
+                <div class="item-inner">
+                  <div class="item-title-row skeleton">
+                    <div class="item-title">&#8192;&#8192;&#8192;&#8192;&#8192;</div>
+                  </div>
+                  <div class="item-text skeleton">&#8192;&#8192;&#8192;&#8192;&#8192;</div>
+                </div>
+              </a>
+            </li>
+            <li class="skeletonFade">
+              <a href="#" class="item item-content">
+                <div class="item-media skeleton" style="height: 70px;">
+                  &#8192;&#8192;&#8192;&#8192;
+                  &#8192;&#8192;&#8192;&#8192;
+                </div>
+                <div class="item-inner">
+                  <div class="item-title-row skeleton">
+                    <div class="item-title">&#8192;&#8192;&#8192;&#8192;&#8192;</div>
+                  </div>
+                  <div class="item-text skeleton">&#8192;&#8192;&#8192;&#8192;&#8192;</div>
+                </div>
+              </a>
+            </li>
+            <li class="skeletonFade">
+              <a href="#" class="item item-content">
+                <div class="item-media skeleton" style="height: 70px;">
+                  &#8192;&#8192;&#8192;&#8192;
+                  &#8192;&#8192;&#8192;&#8192;
+                </div>
+                <div class="item-inner">
+                  <div class="item-title-row skeleton">
+                    <div class="item-title">&#8192;&#8192;&#8192;&#8192;&#8192;</div>
+                  </div>
+                  <div class="item-text skeleton">&#8192;&#8192;&#8192;&#8192;&#8192;</div>
+                </div>
+              </a>
+            </li>
+            <li class="skeletonFade">
+              <a href="#" class="item item-content">
+                <div class="item-media skeleton" style="height: 70px;">
+                  &#8192;&#8192;&#8192;&#8192;
+                  &#8192;&#8192;&#8192;&#8192;
+                </div>
+                <div class="item-inner">
+                  <div class="item-title-row skeleton">
+                    <div class="item-title">&#8192;&#8192;&#8192;&#8192;&#8192;</div>
+                  </div>
+                  <div class="item-text skeleton">&#8192;&#8192;&#8192;&#8192;&#8192;</div>
+                </div>
+              </a>
+            </li>
+            <li class="skeletonFade">
+              <a href="#" class="item item-content">
+                <div class="item-media skeleton" style="height: 70px;">
+                  &#8192;&#8192;&#8192;&#8192;
+                  &#8192;&#8192;&#8192;&#8192;
+                </div>
+                <div class="item-inner">
+                  <div class="item-title-row skeleton">
+                    <div class="item-title">&#8192;&#8192;&#8192;&#8192;&#8192;</div>
+                  </div>
+                  <div class="item-text skeleton">&#8192;&#8192;&#8192;&#8192;&#8192;</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="preloader infinite-scroll-preloader"></div>
+        </div>
+      </div>
+
+      <div class="title-medium-container title-small">
+        <h2 style="width: 40%;">E aí, gostou?</h2>
+        <a href="#" data-popup=".report-popup" class="popup-open"
+          style="float: right;color: darkcyan;margin-top: -20px;font-size: 14px;">
+          Reportar
+        </a>
+      </div>
+      <div class="popup report-popup popup-swipe-to-close">
+        <div class="view">
+          <div class="page">
+            <div class="navbar">
+              <div class="navbar-bg"></div>
+              <div class="navbar-inner">
+                <div class="left">
+                  <a class="link popup-close">Fechar</a>
+                </div>
+                <div class="title">Qual o problema?</div>
+              </div>
+            </div>
+            <div class="page-content">
+              <div class="list links-list">
+                <ul>
+                  <li><a href="#" onclick="reportPost(1)" class="popup-close">Não é um nude</a></li>
+                  <li><a href="#" onclick="reportPost(2)" class="popup-close">Conteudo impróprio</a></li>
+                  <li><a href="#" onclick="reportPost(3)" class="popup-close">Essa foto é de uma pessoa famosa</a></li>
+                  <li><a href="#" onclick="reportPost(4)" class="popup-close">Essa foto foi vazada</a></li>
+                  <li><a href="#" onclick="reportPost(5)" class="popup-close">A categoria esta errada</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="list no-hairlines custom-form">
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <textarea class="resizable" placeholder="Comente" id="postCommentText"></textarea>
+              <span class="input-clear-button"></span>
+            </div>
+          </div>
+        </li>
+        </ul>
+      </div>
+      <a class="big-button button button-fill link" onclick="commentPost()"><i class="icon ion-ios-send"></i>Mandar</a>
+    </div>
+  </div>
+</div>

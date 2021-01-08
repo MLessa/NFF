@@ -1,0 +1,44 @@
+<div class="page no-navbar" data-name="contact">
+  <div class="page-content">
+    <a href="#" class="link back close-button">
+      <img src="img/close.svg" alt="Close">
+    </a>
+    <div class="oval" style="background: linear-gradient(to bottom right, #ff3b30, #6b3e3eb8);"></div>
+    <div class="block" style="height: 600px;">
+      <div class="contact-container">
+        <div class="contact-icon"><i class="icon ion-ios-person-add" style="color: darkgrey;"></i></div>
+        <h1 id="account-photo-title">Sucesso!</h1>
+        <div >
+            <p>Agora escolha uma foto de perfil</p>
+            <div class="card card-style-2">
+              <div class="card-image-container" id="card-image-container">
+                <div id="upload-image-background" class="card-image" style="background-color: maroon;" ></div>
+              </div>
+            </div>
+        </div>
+        <div class="fab fab-extended fab-center-top color-red" style="top: 32%;" 
+          onclick="document.querySelector('#photo-input').click();" id="photo-upload-btn">
+        <a href="#">
+          <i class="icon ion-md-add-circle" style="font-size: 40px;"></i>
+          <div class="fab-text">Foto</div>
+        </a>
+      </div>
+      <input style="display: none;" id="photo-input" type="file" accept="image/*" onchange="uploadFile(this, true)">
+
+        <a id="profilePhotoChangeLink" style="margin-bottom: 20px;text-decoration: underline;margin-top: -20px; display: none;" 
+          onclick="takeAnother()">
+          Mudar foto
+        </a>
+        <a id="accountProfilePhotoSubmitBtn" onclick="sendAccountPhoto()"
+          class="big-button button button-fill link disabled">
+          <i class="icon ion-ios-send"></i>
+          Usar foto
+        </a>
+        
+        <a style="margin-top: 20px;text-decoration: underline;" onclick="app.router.navigate('/')">
+          Fazer isso depois
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

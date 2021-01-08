@@ -1,0 +1,64 @@
+USERS: 
+Create
+http://localhost:62448/User/Create?Username=Tapiocass&emailaddress=ass@a.com&password=tapioca&country=1&category=0
+{
+	"User":{
+	"Username":"tapiocas",
+	"EmailAddress":"as@a.com",
+	"Passsword":"TAPIOCA",
+	"Country":1,
+	"PreferredCategory":0
+	}
+}
+
+Delete
+http://localhost:62448/User/Delete?token=dddddddd-dddd-dddd-dddd-dddddddddddd
+
+Login
+http://localhost:62448/User/LoginUser?Username=Tapiocass&emailaddress=ass@a.com&password=tapioca
+
+GetByID
+http://localhost:62448/User/GetByID?token=dff4c9c1-179c-4f0a-83d0-c6f3ddd47d5d
+
+GetUserPosts
+http://localhost:62448/User/GetUserPosts?token=dff4c9c1-179c-4f0a-83d0-c6f3ddd47d5d
+
+Update
+http://localhost:62448/User/Update?token=dff4c9c1-179c-4f0a-83d0-c6f3ddd47d5d&password=43221&country=1&category=2
+
+
+POST:
+CreatePost
+http://localhost:62448/Post/CreatePost?token=dff4c9c1-179c-4f0a-83d0-c6f3ddd47d5d&description=teste&category=2
+
+HotPost
+http://localhost:62448/Post/HotPost?token=dff4c9c1-179c-4f0a-83d0-c6f3ddd47d5d&postid=1
+
+GetPosts
+http://localhost:62448/Post/GetPosts?token=dff4c9c1-179c-4f0a-83d0-c6f3ddd47d5d&category=2&count=10&lastID=0
+
+GetPublication
+http://localhost:62448/Post/GetPublication?token=dff4c9c1-179c-4f0a-83d0-c6f3ddd47d5d&postID=1
+
+Report
+http://localhost:62448/Post/Report?token=dff4c9c1-179c-4f0a-83d0-c6f3ddd47d5d&postID=1&reportType=1
+
+
+Interaction:
+
+ReportPost
+http://localhost:62448/Interaction/ReportPost?token=dff4c9c1-179c-4f0a-83d0-c6f3ddd47d5d&postID=1&reportType=1
+
+GetInteractions
+http://localhost:62448/Interaction/GetInteractions?token=dff4c9c1-179c-4f0a-83d0-c6f3ddd47d5d&count=10&lastID=0
+
+Comment:
+
+CreateComment
+http://localhost:62448/Comment/CreateComment?token=dff4c9c1-179c-4f0a-83d0-c6f3ddd47d5d&postID=1&text=teste01
+
+DeleteComment
+http://localhost:62448/Comment/DeleteComment?token=dff4c9c1-179c-4f0a-83d0-c6f3ddd47d5d&commentID=2
+
+GetComments
+http://localhost:62448/Comment/GetComments?token=dff4c9c1-179c-4f0a-83d0-c6f3ddd47d5d&postID=1&count=10&lastID=3

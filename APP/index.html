@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Required meta tags-->
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>NudesForFree</title>
+  <link rel="stylesheet" href="css/framework7.ios.min.css">
+  <link rel="stylesheet" href="css/ionicons.css">
+  <link rel="stylesheet" href="css/style.css?v=1">
+  <link rel="stylesheet" href="css/croppie.css">
+  <style>
+    .page-content::after {
+      height: 0px !important
+    }
+	/* body{max-width:500px;} */
+  </style>
+</head>
+
+<body class="color-theme-red">
+  <!-- App root element -->
+  <div id="app">
+    <div class="views tabs">
+      <!-- Main view -->
+      <div id="view-today" class="view view-main tab tab-active">
+        <div data-name="home" class="page">
+          <div class="navbar">
+            <div class="navbar-inner sliding">
+              <div class="title" style="font-family: 'Audiowide'; color:black">NudesForFree</div>
+            </div>
+          </div>
+          <!-- Scrollable page content -->
+          <div class="page-content" style="padding-top: 45px;" data-infinite-distance="70">
+
+            <div class="toolbar tabbar toolbar-top">
+              <div class="toolbar-inner">
+                <a href="#tab-feminino" id="MF" class="tab-link tab-link-active" onclick="MF()">Feminino</a>
+                <a href="#tab-masculino" id="MH" class="tab-link" onclick="MH()">Masculino</a>
+                <a href="#tab-casal-hetero" id="MC" class="tab-link" onclick="MC()">Casal</a>
+              </div>
+            </div>
+            <div class="tabs-animated-wrap" id="tabF" style="overflow:hidden;height:80%">
+              <div class="tabs">
+                <div id="tab-feminino" class="page-content tab tab-active  infinite-scroll-content">
+                  <div class="block">
+                    <div class="skeletonFade">
+                      <div class='card skeleton'>
+                        <div class='card-image skeleton'>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skeletonFade">
+                      <div class='card'>
+                        <div class='card-image skeleton'></div>
+                      </div>
+                    </div>
+                    <div class="skeletonFade">
+                      <div class='card'>
+                        <div class='card-image skeleton'></div>
+                      </div>
+                    </div>
+                    <div class="skeletonFade">
+                      <div class='card'>
+                        <div class='card-image skeleton'></div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div id="tab-masculino" class="page-content tab infinite-scroll-content">
+                  <div class="block">
+                    <div class="skeletonFade">
+                      <div class='card'>
+                        <div class='card-image skeleton'></div>
+                      </div>
+                    </div>
+                    <div class="skeletonFade">
+                      <div class='card'>
+                        <div class='card-image skeleton'></div>
+                      </div>
+                    </div>
+                    <div class="skeletonFade">
+                      <div class='card'>
+                        <div class='card-image skeleton'></div>
+                      </div>
+                    </div>
+                    <div class="skeletonFade">
+                      <div class='card'>
+                        <div class='card-image skeleton'></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="tab-casal-hetero"    class="page-content tab infinite-scroll-content">                  
+                    <div class="toolbar tabbar toolbar-top">
+                      <div class="toolbar-inner">
+                        <a href="#tab-casal-hetero" style="color:#ff0000" class="tab-link Mhxm tab " onclick="Mhxm()">HxM</a>
+                        <a href="#tab-casal-homoM"  class="tab-link Mmxm tab" onclick="Mmxm()">MxM</a>
+                        <a href="#tab-casal-homoH"   class="tab-link Mhxh tab" onclick="Mhxh()">HxH</a>
+                      </div>
+                    </div>
+                          <div class="block">
+                            <div class="skeletonFade">
+                              <div class='card'>
+                                <div class='card-image skeleton'></div>
+                              </div>
+                            </div>
+                            <div class="skeletonFade">
+                              <div class='card'>
+                                <div class='card-image skeleton'></div>
+                              </div>
+                            </div>
+                      
+                          </div>
+                        
+						
+						</div>
+						<div id="tab-casal-homoM"    class="page-content tab infinite-scroll-content">
+                
+                    <div class="toolbar tabbar toolbar-top" >
+                      <div class="toolbar-inner">
+                        <a href="#tab-casal-hetero" class="tab-link Mhxm tab"onclick="Mhxm()">HxM</a>
+                        <a href="#tab-casal-homoM"   style="color:#ff0000" onclick="Mmxm()" class="tab-link Mmxm tab ">MxM</a>
+                        <a href="#tab-casal-homoH"   class="tab-link Mhxh tab"onclick="Mhxh()">HxH</a>
+                      </div>
+                    </div>
+                        
+                          <div class="block">
+                            <div class="skeletonFade">
+                              <div class='card'>
+                                <div class='card-image skeleton'></div>
+                              </div>
+                            </div>
+                            <div class="skeletonFade">
+                              <div class='card'>
+                                <div class='card-image skeleton'></div>
+                              </div>
+                            </div>
+                       
+                          </div>
+                        </div>
+						<div id="tab-casal-homoH"    class="page-content tab infinite-scroll-content">
+                  
+                    <div class="toolbar tabbar toolbar-top">
+                      <div class="toolbar-inner">
+                        <a href="#tab-casal-hetero" class="tab-link Mhxm tab"onclick="Mhxm()">HxM</a>
+                        <a href="#tab-casal-homoM"  class="tab-link Mmxm tab"onclick="Mmxm()">MxM</a>
+                        <a href="#tab-casal-homoH"   style="color:#ff0000" onclick="Mhxh()" class="tab-link Mhxh tab  ">HxH</a>
+                      </div>
+                    </div>
+                        
+                          <div class="block">
+                            <div class="skeletonFade">
+                              <div class='card'>
+                                <div class='card-image skeleton'></div>
+                              </div>
+                            </div>
+                            <div class="skeletonFade">
+                              <div class='card'>
+                                <div class='card-image skeleton'></div>
+                              </div>
+                            </div>
+                     
+                        
+                      
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Toolbar -->
+      <div class="toolbar tabbar tabbar-labels">
+        <div class="toolbar-inner">
+          <a class="tab-link footer-tab-button tab-link-active index-page" onclick="navigateToIndex()">
+            <i class="icon ion-ios-home"></i>
+            <span class="tabbar-label">Home</span>
+          </a>
+          <a class="tab-link footer-tab-button interactions-page" onclick="conditionalRedirect('/interactions/')">
+            <i class="icon ion-ios-text"></i>
+            <span class="tabbar-label">Interações</span>
+          </a>
+          <a class="tab-link footer-tab-button camera-page" onclick="conditionalRedirect('/camera/')">
+            <i class="icon ion-ios-camera"></i>
+            <span class="tabbar-label">Mandar nude</span>
+          </a>
+          <a class="tab-link footer-tab-button my-nudes-page" onclick="conditionalRedirect('/my-nudes/')">
+            <i class="icon ion-ios-photos"></i>
+            <span class="tabbar-label">Meus nudes</span>
+          </a>
+          <a class="tab-link footer-tab-button user-page" onclick="conditionalRedirect('/user/')">
+            <i class="icon ion-ios-person"></i>
+            <span class="tabbar-label">Perfil</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/framework7.min.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/app.js?v=1"></script>
+  <script src="js/loadImage.js"></script>
+  <script src="js/croppie.js"></script>
+  <script src="js/js.cookie.js"></script>
+  <script src="js/exif.js"></script>
+  <script>loadNudes();</script>
+</body>
+
+</html>

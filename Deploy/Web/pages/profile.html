@@ -1,0 +1,84 @@
+<div class="page author no-navbar">
+  <div class="page-content" style="height: 90%;">
+    <div class="oval" style="background: linear-gradient(to bottom right, #ff3b30, #6b3e3eb8);"></div>
+    <div class="block" style="height: 560px;">
+      <div class="author-infos" style="padding-bottom: 7px;">
+        <img class="author-avatar" id="profile_avatar" onclick="editPhoto()">
+        <div class="author-name" id="profile_username"></div>
+      </div>
+      <div class="count-container">
+        <div class="count-block">
+          <div class="count-number" id="profile_nudeCount"></div>
+          <div class="count-label">Nudes</div>
+        </div>
+        <div class="count-block">
+          <div class="count-number" id="profile_commentCount"></div>
+          <div class="count-label">Comentários</div>
+        </div>
+        <div class="count-block">
+          <div class="count-number" id="profile_likeCount"></div>
+          <div class="count-label">Likes</div>
+        </div>
+      </div>
+      <div class="title-medium-container title-with-link">
+        <h2>Melhores Nudes</h2>
+        <a href="/my-nudes/" class="col button button-small button-round button-fill color-red">Ver todos</a>
+      </div>
+      <div></div>
+      <div id="noBestNudes" class="no-nude-div" style="display: none;">
+        <p class="no-nude-div-item no-nude-text" style="top: 40%;font-size: 19px;">Você ainda não enviou nenhum nude...</p>
+        <p class="no-nude-div-item no-nude-sad" style="top: 77%;font-size: 30px;">=(</p>
+        <div class="no-nude-div-item no-nude-btn" style="top: 118%;width: 180px;"
+          onclick="app.router.navigate('/camera/');">
+          <a class="button button-large button-round button-fill color-red">
+            Mandar nude
+          </a>
+        </div>
+      </div>
+      <ul class="list media-list post-list" id="profile_bestNudes">
+        <li style="margin-top: 10px;">
+          <a>
+            <div class="item-content skeletonFade">
+              <div class="item-media skeleton"></div>
+              <div class="item-inner">
+                <div class="item-subtitle skeleton">&#8192;&#8192;&#8192;</div>
+                <div class="item-title skeleton">&#8192;&#8192;&#8192;&#8192;&#8192;</div>
+                <div class="item-subtitle bottom-subtitle skeleton">&#8192;&#8192;&#8192;</div>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li style="margin-top: 10px;">
+          <a>
+            <div class="item-content skeletonFade">
+              <div class="item-media skeleton"></div>
+              <div class="item-inner">
+                <div class="item-subtitle skeleton">&#8192;&#8192;&#8192;</div>
+                <div class="item-title skeleton">&#8192;&#8192;&#8192;&#8192;&#8192;</div>
+                <div class="item-subtitle bottom-subtitle skeleton">&#8192;&#8192;&#8192;</div>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li style="margin-top: 10px;">
+          <a>
+            <div class="item-content skeletonFade">
+              <div class="item-media skeleton"></div>
+              <div class="item-inner">
+                <div class="item-subtitle skeleton">&#8192;&#8192;&#8192;</div>
+                <div class="item-title skeleton">&#8192;&#8192;&#8192;&#8192;&#8192;</div>
+                <div class="item-subtitle bottom-subtitle skeleton">&#8192;&#8192;&#8192;</div>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <div style="margin-top: 80px;">
+        <a class="col button button-small button-round button-fill color-red"
+          style="margin-bottom: 10px;" onclick="logOut()">Sair</a>
+        <a class="col button button-small button-round button-fill color-red" onclick="openDeleteAccountModal()">Apagar conta</a>
+      </div>
+
+    </div>
+  </div>
+</div>

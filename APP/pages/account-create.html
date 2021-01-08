@@ -1,0 +1,107 @@
+<div class="page no-navbar" data-name="contact">
+  <div class="page-content">
+    <a href="#" class="link back close-button">
+      <img src="img/close.svg" alt="Close">
+    </a>
+    <div class="oval" style="background: linear-gradient(to bottom right, #ff3b30, #6b3e3eb8);"></div>
+    <div class="block" style="height: 600px;">
+      <div class="contact-container">
+        <div class="contact-icon"><i class="icon ion-ios-person-add" style="color: darkgrey;"></i></div>
+        <h1>Criar conta</h1>
+        <div class="list no-hairlines custom-form contact-form">
+          <ul>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <input type="text" placeholder="Login" id="login">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <input type="email" placeholder="E-mail" id="email">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <input type="password" placeholder="Senha" id="password">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-input-wrap">
+                  <input type="password" placeholder="Repita a senha" id="passwordRetype">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li style="margin-top: 35px;margin-bottom: 35px;">
+              <div>
+                 <p>
+                  <label class="checkbox" style="margin-right: 10px;top: -3px;">
+                    <input id="useTermsChk" type="checkbox" onchange="accountCreationCheckboxChange()">
+                    <i class="icon-checkbox"></i>
+                  </label>
+                    Declaro que li e aceito os <a data-popup=".use-terms-popup" class="popup-open" 
+                    style="text-decoration: underline;">
+                    Termos de Uso
+                  </a>
+                </p> 
+              </div>
+            </li>
+          </ul>
+        </div>
+        <a id="accountCreationSubmitBtn" class="big-button button button-fill link disabled"
+          onclick="createAccount()">
+          <i class="icon ion-ios-add"></i>
+          Criar conta
+        </a>
+      </div>
+      <div class="popup use-terms-popup popup-swipe-to-close">
+        <div class="view">
+          <div class="page">
+            <div class="navbar">
+              <div class="navbar-bg"></div>
+              <div class="navbar-inner">
+                <div class="left">
+                  <a class="link popup-close">Fechar</a>
+                </div>
+                <div class="title">Termos de uso</div>
+              </div>
+            </div>
+            <div class="page-content">
+              <p>
+                NudesForFree.com é uma rede social para o compartilhamento de fotos eróticas pessoais (nudes), onde o usuário poderá tanto postar suas fotos quanto visualizar as imagens disponibilizadas pelos outros usuários.
+              </p>
+              <p>
+                A visualização das imagens pelos usuários é de livre acesso, incluindo usuários não cadastrados na plataforma. Para enviar imagens é necessário uma conta ativa no NudesForFree.com. O processo de criação de conta é gratuito e precisa de um email válido para sua efetivação. A fim de impossibilitar a identificação dos usuários pelo email, essa informação é registrada em formato criptografado de forma a tornar impossível a obtenção dessa informação, até mesmo pela equipe NudesForFree.com, tornando o ambiente totalmente seguro.
+              </p>
+              <p>
+                Não é permitido o envio de imagens que identifiquem o/a usuário(a). Toda imagem enviada para a plataforma pode ser moderada e, caso seja identificada a presença de rostos, a mesma será removida assim como todo o histórico de interações da postagem.
+              </p>
+              <p>
+                Não é permitido o envio de fotos vazadas, pessoais ou de personalidades famosas, assim como fotos com conteúdo de pedofilia, zoofilia, cropofagia etc. Caso uma imagem com essas características seja identificada ou reportada, tanto a foto como a conta e todos os dados do usuário responsável serão sumariamente apagados sem que haja a possibilidade de recuperação de todo o histórico.
+              </p>
+              <p>
+                Para melhor proteger a integridade de cada um dos usuários, não recomendamos a publicação de fotos exibindo tatuagens, piercings ou qualquer outra característica em que seja possível  sua identificação pessoal.
+              </p>
+              <p>
+                Atenção: o uso do aplicativo é destinado à pessoas maiores de 18 anos e absolutamente capazes, em pleno gozo de suas faculdades mentais.
+              </p>
+              <p>
+                NudesForFree.com
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

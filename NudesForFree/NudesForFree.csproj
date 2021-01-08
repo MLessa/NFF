@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\Posts\post_156F0BD6CEEC9D6B198B802E1C59AE0F03acda1c-ef07-4192-a475-84b1a2bddf16.jpeg" />
+    <Content Remove="wwwroot\Posts\post_156F0BD6CEEC9D6B198B802E1C59AE0F176d5a04-4365-4782-b2de-a27f8559e0ed.jpeg" />
+    <Content Remove="wwwroot\Posts\post_156F0BD6CEEC9D6B198B802E1C59AE0F1c4fe8fb-4220-43c1-8d63-97abb1ade6e3.jpeg" />
+    <Content Remove="wwwroot\Posts\post_156F0BD6CEEC9D6B198B802E1C59AE0F3e5d7638-759a-4eb4-9667-2b535cf94e11.jpeg" />
+    <Content Remove="wwwroot\Posts\post_156F0BD6CEEC9D6B198B802E1C59AE0F8ad4d0d6-ed63-4087-9149-0c348c1888fb.jpeg" />
+    <Content Remove="wwwroot\Posts\post_156F0BD6CEEC9D6B198B802E1C59AE0Feaba3976-2bf3-45fa-a236-26356ea0203b.jpeg" />
+    <Content Remove="wwwroot\Posts\post_156F0BD6CEEC9D6B198B802E1C59AE0Fef7f4cb8-9716-45f2-a8e2-2dad3a0f8767.jpeg" />
+    <Content Remove="wwwroot\Posts\post_156F0BD6CEEC9D6B198B802E1C59AE0Ff9872579-7f69-4739-80ba-3cdfe56fd265.jpeg" />
+    <Content Remove="wwwroot\Posts\post_5_637213818752359371.jpeg" />
+    <Content Remove="wwwroot\Posts\post_5_637213819456575861.jpeg" />
+    <Content Remove="wwwroot\Posts\post_5_637213831245826049.jpeg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.30" />
+    <PackageReference Include="MySqlConnector" Version="0.63.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Avatars\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Avatars\avatar_18.png" />
+    <None Include="wwwroot\Avatars\avatar_19.png" />
+    <None Include="wwwroot\Posts\post_156F0BD6CEEC9D6B198B802E1C59AE0F03acda1c-ef07-4192-a475-84b1a2bddf16.jpeg" />
+    <None Include="wwwroot\Posts\post_156F0BD6CEEC9D6B198B802E1C59AE0F176d5a04-4365-4782-b2de-a27f8559e0ed.jpeg" />
+    <None Include="wwwroot\Posts\post_156F0BD6CEEC9D6B198B802E1C59AE0F1c4fe8fb-4220-43c1-8d63-97abb1ade6e3.jpeg" />
+    <None Include="wwwroot\Posts\post_156F0BD6CEEC9D6B198B802E1C59AE0F3e5d7638-759a-4eb4-9667-2b535cf94e11.jpeg" />
+    <None Include="wwwroot\Posts\post_156F0BD6CEEC9D6B198B802E1C59AE0F8ad4d0d6-ed63-4087-9149-0c348c1888fb.jpeg" />
+    <None Include="wwwroot\Posts\post_156F0BD6CEEC9D6B198B802E1C59AE0Feaba3976-2bf3-45fa-a236-26356ea0203b.jpeg" />
+    <None Include="wwwroot\Posts\post_156F0BD6CEEC9D6B198B802E1C59AE0Fef7f4cb8-9716-45f2-a8e2-2dad3a0f8767.jpeg" />
+    <None Include="wwwroot\Posts\post_156F0BD6CEEC9D6B198B802E1C59AE0Ff9872579-7f69-4739-80ba-3cdfe56fd265.jpeg" />
+    <None Include="wwwroot\Posts\post_5_637213818752359371.jpeg" />
+    <None Include="wwwroot\Posts\post_5_637213819456575861.jpeg" />
+    <None Include="wwwroot\Posts\post_5_637213831245826049.jpeg" />
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
+
+
+
+</Project>
